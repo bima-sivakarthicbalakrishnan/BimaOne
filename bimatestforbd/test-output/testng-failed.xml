@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Final Flow]">
+  <test name="STEP 01">
+    <classes>
+      <class name="com.bimaone.application.login.Login"/>
+    </classes>
+  </test> <!-- STEP 01 -->
+  <test name="STEP 02">
+    <classes>
+      <class name="com.bimaone.application.welcomecall.WelcomeCall"/>
+    </classes>
+  </test> <!-- STEP 02 -->
+  <test name="STEP 03">
+    <classes>
+      <class name="com.bimaone.application.callEntry.CallEntry"/>
+    </classes>
+  </test> <!-- STEP 03 -->
+  <test name="STEP 04">
+    <classes>
+      <class name="com.bimaone.application.pendingconsultation.PendingConsultation"/>
+    </classes>
+  </test> <!-- STEP 04 -->
+  <test name="STEP 01(failed)">
+    <classes>
+      <class name="com.bimaone.application.login.Login">
+        <methods>
+          <include name="callLoginTCs"/>
+          <include name="initiatedriver"/>
+        </methods>
+      </class> <!-- com.bimaone.application.login.Login -->
+      <class name="com.bimaone.application.welcomecall.WelcomeCall">
+        <methods>
+          <include name="finish"/>
+          <include name="initiatedriver"/>
+        </methods>
+      </class> <!-- com.bimaone.application.welcomecall.WelcomeCall -->
+      <class name="com.bimaone.application.callEntry.CallEntry">
+        <methods>
+          <include name="initiatedriver"/>
+        </methods>
+      </class> <!-- com.bimaone.application.callEntry.CallEntry -->
+      <class name="com.bimaone.application.pendingconsultation.PendingConsultation">
+        <methods>
+          <include name="initiatedriver"/>
+        </methods>
+      </class> <!-- com.bimaone.application.pendingconsultation.PendingConsultation -->
+    </classes>
+  </test> <!-- STEP 01(failed) -->
+  <test name="STEP 03(failed)">
+    <classes>
+      <class name="com.bimaone.application.welcomecall.WelcomeCall">
+        <methods>
+          <include name="finish"/>
+          <include name="initiatedriver"/>
+        </methods>
+      </class> <!-- com.bimaone.application.welcomecall.WelcomeCall -->
+      <class name="com.bimaone.application.login.Login">
+        <methods>
+          <include name="initiatedriver"/>
+        </methods>
+      </class> <!-- com.bimaone.application.login.Login -->
+      <class name="com.bimaone.application.callEntry.CallEntry">
+        <methods>
+          <include name="callentryTCs"/>
+          <include name="initiatedriver"/>
+        </methods>
+      </class> <!-- com.bimaone.application.callEntry.CallEntry -->
+      <class name="com.bimaone.application.pendingconsultation.PendingConsultation">
+        <methods>
+          <include name="initiatedriver"/>
+        </methods>
+      </class> <!-- com.bimaone.application.pendingconsultation.PendingConsultation -->
+    </classes>
+  </test> <!-- STEP 03(failed) -->
+  <test name="STEP 04(failed)">
+    <classes>
+      <class name="com.bimaone.application.welcomecall.WelcomeCall">
+        <methods>
+          <include name="finish"/>
+          <include name="initiatedriver"/>
+        </methods>
+      </class> <!-- com.bimaone.application.welcomecall.WelcomeCall -->
+      <class name="com.bimaone.application.login.Login">
+        <methods>
+          <include name="initiatedriver"/>
+        </methods>
+      </class> <!-- com.bimaone.application.login.Login -->
+      <class name="com.bimaone.application.callEntry.CallEntry">
+        <methods>
+          <include name="initiatedriver"/>
+        </methods>
+      </class> <!-- com.bimaone.application.callEntry.CallEntry -->
+      <class name="com.bimaone.application.pendingconsultation.PendingConsultation">
+        <methods>
+          <include name="initiatedriver"/>
+          <include name="callentryTCs"/>
+        </methods>
+      </class> <!-- com.bimaone.application.pendingconsultation.PendingConsultation -->
+    </classes>
+  </test> <!-- STEP 04(failed) -->
+</suite> <!-- Failed suite [Final Flow] -->

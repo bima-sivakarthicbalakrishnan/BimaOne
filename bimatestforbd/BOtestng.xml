@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Final Flow">
+
+<test name="STEP 01">
+ <classes>  
+    <!-- login Page Testing -->
+       <class name="com.bimaone.application.login.Login"> 
+        </class>  
+ </classes>
+ </test> 
+  
+  <test name="STEP 02">
+ <classes>  
+       <class name="com.bimaone.application.welcomecall.WelcomeCall"> 
+        </class>  
+ </classes>
+ </test> 
+ 
+ <test name="STEP 03">
+ <classes>  
+       <class name="com.bimaone.application.callEntry.CallEntry"> 
+        </class>  
+ </classes>
+ </test> 
+ 
+ <test name="STEP 04">
+ <classes>  
+       <class name="com.bimaone.application.pendingconsultation.PendingConsultation"> 
+        </class>  
+ </classes>
+ </test> 
+ 
+  
+ </suite>
+ 
+ 
