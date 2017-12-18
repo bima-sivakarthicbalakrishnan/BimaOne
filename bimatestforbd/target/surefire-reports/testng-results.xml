@@ -2,10 +2,10 @@
 <testng-results skipped="0" failed="0" total="0" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="com.bimaone.bimaonetesting.AppTest" duration-ms="2" started-at="2017-12-14T07:48:17Z" finished-at="2017-12-14T07:48:17Z">
+  <suite name="com.bimaone.bimaonetesting.AppTest" duration-ms="2" started-at="2017-12-15T09:27:10Z" finished-at="2017-12-15T09:27:10Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="2" started-at="2017-12-14T07:48:17Z" finished-at="2017-12-14T07:48:17Z">
+    <test name="Command line test" duration-ms="2" started-at="2017-12-15T09:27:10Z" finished-at="2017-12-15T09:27:10Z">
     </test> <!-- Command line test -->
   </suite> <!-- com.bimaone.bimaonetesting.AppTest -->
 </testng-results>

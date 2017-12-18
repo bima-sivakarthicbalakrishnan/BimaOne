@@ -64,6 +64,7 @@ public class PendingConsultationV001 extends Constants {
 	public static String condition_improved_ ;
 	public static String fp_stat_fp ;
 	public static String incomp_stat_fp ;
+	public static String cons_msg;
 
 	
 	
@@ -590,12 +591,19 @@ public class PendingConsultationV001 extends Constants {
 			driver.findElement(By.xpath(prop.getProperty("complete"))).click();
 			Thread.sleep(3000);
 			
-			driver.findElement(By.xpath(".//*[@id='informed_consent_dialog']/div/div[2]/div[1]/div/div/div[2]/label")).click();
+			driver.findElement(By.xpath(".//*[@id='informed_consent_dialog']/div/div[2]/div[1]/div/div/div[1]/label")).click();
 			Thread.sleep(1000);
 			driver.findElement(By.id("call-customer-input-submit")).click();
 			Thread.sleep(1000);
 
+			String quer = "select consultation_message from consultation   order by created_date desc limit 1;";
+			ResultSet rsObj = DBConnection.DBConnect(quer);
+			while (rsObj.next()) {
+				cons_msg = rsObj.getString("consultation_message");
+			}
+			Verify.verify((cons_msg.length())> 0);
 			
+			System.out.println("verified message");
 
 			String query = "select medicine_name,duration,duration_unit,dosage,dosage_unit,quantity,quantity_unit,quantity_freq from medical_prescription order by created_date desc limit 1;";
 			ResultSet rsObject = DBConnection.DBConnect(query);
